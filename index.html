@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Tron</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="favicon.png">
+    </head>
+
+	<body>
+
+		<div id="introBack">
+			<div class="intro" id="intro">
+				<h2>Welcome to Tron</h2>
+				Player 1:
+				<select>
+					<option>Player 1</option>
+				</select>
+				<input type="color" id="color1" value="#0000ff">
+				<input class="input" id="nameInput" type="text" placeholder="Name" autofocus>
+				<br>
+				Player 2:
+				<select id="nameDropdown" onchange="player2input()">
+					<option>Computer</option>
+					<option>Player 2</option>
+				</select>
+				<input type="color" id="color2" value="#ffa500">
+				<input class="input" id="nameInput2" type="text" placeholder="Name" disabled>
+				<br>
+				<button class="button" onclick="gogo()">Submit</button>
+			</div>
+      <div id="modScreen">
+        <h2>Tron Mods</h2>
+        Player 1:<br>
+        &nbsp;Speed: <input class="input" id="player1speed" type="number" value="80"><br>
+        <br>
+        Player 2:<br>
+        &nbsp;Speed: <input class="input" id="player2speed" type="number" value="80"><br>
+      </div>
+		</div>
+
+		<div id="game">
+
+			<table id="table"></table>
+
+		</div>
+
+		<div id="countdown"></div>
+
+
+		<div id="leftScore" class="score">
+			<span id="name2"></span><br><br>
+			Score: <span id="score2"></span><br><br>
+			<span id="output2"></span>
+		</div>
+
+
+		<div id="rightScore" class="score">
+			<span id="name1"></span><br><br>
+			Score: <span id="score1"></span><br><br>
+			<span id="output1"></span>
+		</div>
+
+
+		<div id="restart">
+			<h3>Restart</h3>
+			<button onclick="restart()">Restart</button>
+			<br><br>
+		</div>
+
+
+
+		<script src="script.js"></script>
+    </body>
+
+</html>
