@@ -231,7 +231,6 @@ document.onkeydown = function() {
          if (player2.direction == "up") return;
          player2.direction = "down";
          break;
-
       case 37:
          if (!gameIsRunning) return;
          if (player.direction == "right") return;
@@ -270,7 +269,7 @@ document.onkeydown = function() {
 //IMPORTANT:
 //I chose very intentionally to make two of these functions
 //because if I used one with a parameter for the other players
-//then it ran a lot slower and lagged so I chose o use two.
+//then it ran a lot slower and lagged so I chose to use two.
 //
 //moves the player 1px in their current direction & checks for loss
 function movePlayer() {
